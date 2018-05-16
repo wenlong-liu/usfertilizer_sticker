@@ -3,9 +3,10 @@ Stikcer for Usfertilizer
 
 In this rep, a sticker was generated for an R package,
 [**usfertilizer**](https://github.com/wenlong-liu/usfertilizer), which
-provides county-lelel nutrients data from 1945 to 2012 in USA.
+provides county-lelel nutrients data from 1945 to 2012 in
+USA.
 
-![](./usfertilizer.png)
+<img src="./usfertilizer.png" width="30%" style="display: block; margin: auto;" />
 
 [HexSticker](https://github.com/GuangchuangYu/hexSticker), an R package
 developed by Guangchuang Yu, was used to design the sticker.

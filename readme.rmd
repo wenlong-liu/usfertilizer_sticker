@@ -5,13 +5,21 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, eval = FALSE, 
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
                       collapse = TRUE,comment = "#>")
 ```
+```{r,echo=FALSE}
+require(knitr)
+```
+
 
 In this rep, a sticker was generated for an R package, [**usfertilizer**](https://github.com/wenlong-liu/usfertilizer), which provides county-lelel nutrients data from 1945 to 2012 in USA.  
 
-![](./usfertilizer.png)
+```{r,echo=FALSE, out.width="30%",fig.align='center'}
+img_path = "./usfertilizer.png"
+include_graphics(img_path)
+```
+
 
 [HexSticker](https://github.com/GuangchuangYu/hexSticker), an R package developed by Guangchuang Yu, was used to design the sticker.
 
@@ -27,7 +35,7 @@ In this rep, a sticker was generated for an R package, [**usfertilizer**](https:
 
 ### Import libraries.
 
-```{r}
+```{r,eval=FALSE}
 require(hexSticker)
 require(usfertilizer)
 require(ggplot2)
@@ -38,7 +46,7 @@ data("us_fertilizer_county")
 ```
 
 ### Prepare for the ggplot map of nitrogen application in US.
-```{r}
+```{r,eval=FALSE}
 # Generate potential plots.
 states <- map_data("state")
 # set color map
