@@ -1,7 +1,7 @@
 Stikcer for Usfertilizer
 ================
 
-In this rep, a customed sticker was generated for an R package,
+In this rep, a sticker was generated for an R package,
 [**usfertilizer**](https://github.com/wenlong-liu/usfertilizer), which
 provides county-lelel nutrients data from 1945 to 2012 in USA.
 
@@ -21,9 +21,6 @@ in the repo.
 
 ## How to generate a sticker like this
 
-The following content will show how to generate this stikcer
-step-by-step.
-
 ### Import libraries.
 
 ``` r
@@ -36,7 +33,7 @@ require(dplyr)
 data("us_fertilizer_county")
 ```
 
-### prepare for the ggplot map of nitrogen application in US.
+### Prepare for the ggplot map of nitrogen application in US.
 
 ``` r
 # Generate potential plots.
@@ -70,7 +67,7 @@ state_plot = states %>%
         panel.background = element_blank())
 ```
 
-### generate sticker
+### Generate sticker
 
 ``` r
 # color theme:https://coolors.co/db5461-175676-000000-087e8b-f48668

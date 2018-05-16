@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, eval = FALS
                       collapse = TRUE,comment = "#>")
 ```
 
-In this rep, a customed sticker was generated for an R package, [**usfertilizer**](https://github.com/wenlong-liu/usfertilizer), which provides county-lelel nutrients data from 1945 to 2012 in USA.  
+In this rep, a sticker was generated for an R package, [**usfertilizer**](https://github.com/wenlong-liu/usfertilizer), which provides county-lelel nutrients data from 1945 to 2012 in USA.  
 
 ![](./usfertilizer.png)
 
@@ -37,7 +37,7 @@ require(dplyr)
 data("us_fertilizer_county")
 ```
 
-### prepare for the ggplot map of nitrogen application in US.
+### Prepare for the ggplot map of nitrogen application in US.
 ```{r}
 # Generate potential plots.
 states <- map_data("state")
@@ -70,7 +70,7 @@ state_plot = states %>%
         panel.background = element_blank())
 ```
 
-### generate sticker
+### Generate sticker
 
 ```{r, eval=FALSE}
 # color theme:https://coolors.co/db5461-175676-000000-087e8b-f48668
